@@ -20,3 +20,17 @@
 <button type="submit">submit </button>
 <!--or-->
 <input type="submit" name="submit">
+</ / form validation using / />
+</ / required for specifying input,/ />
+</ /minlength and maxlength: Define the minimum and maximum length for text inputs/ />
+</ /pattern: Uses a regular expression to define a pattern that the input must match./ />
+
+<form action="/submit-form" method="post">
+    <label for="username">Username (4-8 characters):</label>
+    <input type="text" id="username" name="username" required minlength="4" maxlength="8" placeholder="Username">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+    <button type="submit">Submit</button>
+</form>
